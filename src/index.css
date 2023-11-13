@@ -1,13 +1,159 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131518;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.content {
+  width: 270px;
+  background-color: #1f262f;
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.icon_div,
+.rating {
+  width: 50px;
+  height: 50px;
+  background-color: #262e38;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #7C8798;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #969FAD;
+  margin: 7px 0 24px 0;
+}
+.h1 {
+  margin-bottom: 5px;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 35px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+.p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #969FAD;
+  margin: 7px 0 24px 0;
+}
+
+.ratings_div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Ratings{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#262e38;
+  color:#969FAD;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.Ratings:hover{
+  background-color:#7C8798;
+  color: #ffffff;
+}
+.chechked {
+  background-color:#FC7614;
+  color: #ffffff;
+}
+
+button {
+  border: none;
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffffff;
+  background-color: #FC7614;
+  border-radius: 20px;
+}
+
+
+/* Hover Effects */
+
+button:hover {
+  background-color: #ffffff;
+  color: #FC7614;
+  cursor: pointer;
+}
+
+.rating:hover {
+  background-color: #FC7614;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Submitted */
+
+.submitted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.submitted div {
+  padding: 4px 20px;
+  color: #FC7614;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 24px;
+  background-color: #262E38;
+  border-radius: 20px;
+  margin: 32px 0;
+}
+
+.submitted h1 {
+  margin: 0;
+}
+
+.submitted p {
+  text-align: center;
+}
+
+.checked {
+  background-color: #7C8798;
+  color: #ffffff;
 }
